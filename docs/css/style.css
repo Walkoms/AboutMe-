@@ -1,13 +1,3 @@
 #wrapper {
-  webkit-overflow-scrolling: touch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: var(--viewport-height);
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  padding: 1.4375
   background-image:url('./images/"Tanjiro_destroys_daki.gif"'); 
 }
