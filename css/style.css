@@ -9,12 +9,6 @@
   z-index: 2;
   overflow: hidden;
   padding: 1.4375rem 1.4375rem 1.4375rem 1.4375rem;
-  background-image:url('../images/Tanjiro_destroys_daki.gif'); 
 }
 
-:root {
-  --site-language-direction: ltr;
-  --site-language-alignment: left;
-  --viewport-height: 100vh;
-  --background-height: 100vh;
-}
+
