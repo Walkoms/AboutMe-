@@ -5,6 +5,11 @@
   <title> About me!</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Yellowtail&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Yellowtail&family=Zilla+Slab:wght@300&display=swap');
+
     html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
         margin: 0;
         padding: 0;
@@ -186,7 +191,7 @@
         flex-grow: 0;
         flex-shrink: 0;
         text-align: center;
-        background-color: #592316;
+        background-color: #442D34;
         box-shadow: 0rem 1.75rem 2rem 0rem #704848;
         border-radius: 0.375rem 0.375rem 0.375rem 0.375rem;
         transition: opacity 1s ease 0s,transform 1s ease 0s;
@@ -407,8 +412,8 @@
     }
 
     #text04 {
-        color: #DAB4DE;
-        font-family: 'Lato', sans-serif;
+        color: #B98D93;
+        font-family: 'Anton', sans-serif;
         font-size: 2.25em;
         line-height: 1.375;
         font-weight: 300;
@@ -427,8 +432,8 @@
     }
 
     #text06 {
-        color: #592316;
-        font-family: 'Lato', sans-serif;
+        color: #C4BAB6;
+        font-family: 'Yellowtail', cursive;
         font-size: 1em;
         line-height: 1.75;
         font-weight: 300;
@@ -447,8 +452,8 @@
     }
 
     #text01 {
-        color: #757575;
-        font-family: 'Lato', sans-serif;
+        color: #B98D93;
+        font-family: 'Anton', sans-serif;
         font-size: 1.75em;
         line-height: 1.375;
         font-weight: 300;
@@ -467,8 +472,8 @@
     }
 
     #text03 {
-        color: #757575;
-        font-family: 'Lato', sans-serif;
+        color: #C4BAB6;
+        font-family: 'Zilla Slab', serif;
         font-size: 1em;
         line-height: 1.75;
         font-weight: 300;
@@ -487,8 +492,8 @@
     }
 
     #text05 {
-        color: #757575;
-        font-family: 'Lato', sans-serif;
+        color: #B98D93;
+        font-family: 'Anton', sans-serif;
         font-size: 1.75em;
         line-height: 1.375;
         font-weight: 300;
@@ -639,33 +644,38 @@
     }
 
     #icons01 li a {
+        border-radius: 100%;
         width: 2em;
         height: 2em;
         transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
     }
 
     #icons01 li a svg {
-        width: 45%;
-        height: 45%;
-        top: 5.5%;
+        width: 60%;
+        height: 60%;
         transition: fill 0.25s ease;
     }
 
-    #icons01 a + svg {
-        fill: #782E2E;
-    }
-
     #icons01 a svg {
-        fill: #E6CCCF;
+        fill: #D1D1D1;
     }
 
-    #icons01 a:hover + svg {
-        fill: #A17772 !important;
+    #icons01 a {
+        border: solid 1px #D1D1D1;
+    }
+
+    #icons01 a:hover {
+        border-color: #FF9385 !important;
+    }
+
+    #icons01 a:hover svg {
+        fill: #FF9385 !important;
     }
 
     #icons01 li a + svg {
         transition: fill 0.25s ease, stroke 0.25s ease;
     }
+
 
     .icc-credits {
         display: block;
@@ -1022,14 +1032,149 @@
         }
 
         #icons01 {
-            width: calc(100% + 0.5625rem);
-            margin-left: -0.28125rem;
+              width: calc(100% + 0.5625rem);
+          margin-left: -0.28125rem;
         }
 
-        #icons01 li {
-            margin: 0.28125rem;
+          #icons01 li {
+      margin: 0.28125rem;
         }
     }
+    .list {
+                display: block;
+            }
+
+            .list ul, .list ol {
+                display: inline-block;
+                max-width: 100%;
+                text-align: var(--site-language-alignment);
+                vertical-align: middle;
+            }
+
+            .list ul li, .list ol li {
+                direction: var(--site-language-direction);
+                display: flex;
+                position: relative;
+            }
+
+            .list ul li:before, .list ol li:before {
+                background-repeat: no-repeat;
+                content: '';
+                display: block;
+                position: relative;
+                letter-spacing: 0 !important;
+                font-variant: normal !important;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            .list ul li p, .list ol li p {
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            .list ul li:first-child, .list ol li:first-child {
+                margin-top: 0 !important;
+            }
+    #list01:not(:first-child) {
+                    margin-top: 1.5rem !important;
+                }
+
+    #list01:not(:last-child) {
+                    margin-bottom: 1.5rem !important;
+                }
+
+                #list01 {
+                    color: #C4BAB6;
+                    font-family: 'Zilla Slab', serif;
+                    letter-spacing: 0.1rem;
+                    font-size: 1em;
+                    line-height: 1.625;
+                    font-weight: 400;
+                }
+
+                #list01 a {
+                    text-decoration: underline;
+                }
+
+                #list01 a:hover {
+                    text-decoration: none;
+                }
+
+                #list01 ul {
+                    width: 18rem;
+                    padding-top: 0rem;
+                }
+
+                #list01 ul li {
+                    margin-top: 0rem;
+                }
+
+                #list01 ul li p {
+                    padding: 0 0.75rem;
+                    text-align: center;
+                }
+
+                #list01 ul li:before {
+                    background-image: url('images/coolarrow.svg');
+                    border-radius: 100%;
+                    height: 1.340625rem;
+                    min-width: 1.340625rem;
+                    background-position: center;
+                    background-size: 55%;
+                    background-repeat: no-repeat;
+                    margin-top: 0.2046875rem;
+                    text-align: center;
+                    left: 50px;
+                    padding: 0 0.167578125rem;
+                    line-height: calc(1.340625rem - 3px);
+                    text-indent: 1px;
+                }
+                #list01:not(:first-child) {
+                    margin-top: 1.125rem !important;
+                }
+
+                #list01:not(:last-child) {
+                    margin-bottom: 1.125rem !important;
+                }
+
+                #list01 {
+                    letter-spacing: 0.0875rem;
+                    font-size: 1em;
+                    line-height: 1.625;
+                }
+
+                #list01 ul {
+                    padding-top: 0rem;
+                }
+
+                #list01 ul li p {
+                    padding: 0 0.75rem;
+                }
+
+                #list01 ul li:before {
+                    height: 1.340625rem;
+                    min-width: 1.340625rem;
+                    padding: 0 0.167578125rem;
+                    margin-top: 0.2046875rem;
+                }
+
+                #list01 {
+                    font-size: 1em;
+                }
+
+                #list01 ul {
+                    padding-top: 0rem;
+                }
+
+                #list01 ul li p {
+                    padding: 0 0.75rem;
+                }
+
+                #list01 ul li:before {
+                    margin-top: 0.2046875rem;
+                }
+
 </style>
 <noscript>
     <style>
@@ -1069,6 +1214,11 @@
 </noscript>
 </head>
 <body class="is-loading">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
+            <symbol id="icon-b4d" viewBox="0 0 40 40">
+                <path d="M10,3L3,30l27,7l7-27L10,3z M18,16.7l5.3,1.4L22,23.3L16.7,22L18,16.7z"/>
+            </symbol>
+        </svg>
   <div id="wrapper">
     <div id="main">
         <div class="inner">
@@ -1078,7 +1228,7 @@
                         <a href="#home" class="button n01">Welcome!</a>
                     </li>
                     <li>
-                        <a href="#about" class="button n02">About me!</a>
+                        <a href="#about" class="button n02">About me</a>
                     </li>
                     <li>
                         <a href="#contact" class="button n03">My socials</a>
@@ -1089,78 +1239,60 @@
                 </ul>
             </header>
             <section id="home-section">
-                <h1 id="text04">Pedro's Portfolio</h1>
-                <p id="text06">Welcome to my Portfolio, my name is Pedro Rivera.</p>
-
-
+                <h1 id="text04">Welcome to my about me</h1>
+                <p id="text06" style = "position:relative; top:-40px;" >Last updated 2/3/2022.</p>
+                <p id="text03">
+                  <span style = "position:relative; top:-40px;" >Here you'll find fun facts about me, as well as my interests, socials, etc.
+                    It took me awhile to replicate card, a lot of css and javascript I didn't know,
+                    so please take your time while reading.</span>
+                </p>
                 <div id="image01" class="image">
                     <span class="frame">
-                        <img src="images/home.gif" alt=""/>
+                        <img src="images/home.gif" alt="Rengoku gif"/>
                     </span>
                 </div>
             </section>
             <section id="about-section">
-                <h2 id="text01">About me! :3</h2>
                 <div id="image02" class="image">
                     <span class="frame">
-                        <img src="images/home.gif" alt=""/>
+                        <img src="images/spin.gif" alt="gif of insect user."/>
                     </span>
+                <h2 id="text01">About me!</h2>
                 </div>
-                <p id="text03">
-                    <span>I play a lot of games, such as;</span>
-                    <br/>
-                    <span>Rainbow Seige</span>
-                    <br/>
-                    <span>Apex</span>
-                    <br/>
-                    <span>Roblox</span>
-                    <br/>
-                    <span>l4d2</span>
-                    <br/>
-                    <span>Cookie run</span>
-                    <br/>
-                    <span>Minecraft</span>
-                    <br/>
-                    <span>And more!</span>
-                    <br/>
-                    <span>I have /DIAGNOSED/ anxiety, ADD, ADHD. :(</span>
-                    <br/>
-                    <span>I like to voice call a lot on discord, and I tend to get loud so don &#39;t think I &#39;m trying to annoy you and please don &#39;t call me annoying I &#39;m a bit sensitive to rude remarks, please talk to me about what I am comfortable with and what not! X)</span>
-                    <br/>
-                    <br/>
-                    <span>I love my boyfriend a lot, a very nice man!! :3</span>
-                </p>
+                <div id="list01" class="list">
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    18. Birthday is 12/04
+                                                </p>
+                                            </li>
+                                        </ul>
+                </div>
             </section>
             <section id="contact-section">
-                <h2 id="text05">My socials!!!! yaay!</h2>
+                <h2 id="text05">My Socials</h2>
                 <p id="text02">
-                    <span>You can add me on roblox!</span>
-                    <br/>
-                    <span>My roblox user is: prairierun</span>
-                    <br/>
-                    <span>display name:YungBunnygirl</span>
-                    <br/>
-                    <br/>
-                    <span>Ask me for my other socials though, please and thank you! :0</span>
+
                 </p>
                 <ul id="icons01" class="icons">
-                    <li>
-                        <a class="n01" href="https://www.roblox.com/users/135386335/profile">
-                            <svg>
-                                <use xlink:href="#icon-b4d"></use>
-                            </svg>
-                            <span class="label">Roblox</span>
-                        </a>
-                        <svg>
-                            <use xlink:href="#icon-a09"></use>
-                        </svg>
-                    </li>
-                </ul>
+                            <li>
+                                <a class="n01" href="https://www.roblox.com/users/2503368547/profile">
+                                    <svg>
+                                        <use xlink:href="#icon-b4d"></use>
+                                    </svg>
+                                    <span class="label">Roblox</span>
+                                </a>
+                            </li>
+                        </ul>
                 <div id="image03" class="image">
                     <span class="frame">
                         <img src="images/home.gif" alt=""/>
                     </span>
                 </div>
+            </section>
+            <section id="work-section">
+              <h2 id="text01">My Projects</h2>
+              <p id="text03"> As of right now, I have no projects to show you. I am in develpment of a small roblox project, stay tuned.</p>
             </section>
             <footer id="footer">
                 <div id="credits" class="icc-credits">
